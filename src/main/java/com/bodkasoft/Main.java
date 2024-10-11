@@ -1,7 +1,6 @@
 package com.bodkasoft;
 
 import java.util.Arrays;
-import java.util.List;
 
 /* TODO
 * C3 = 1 (String)
