@@ -1,5 +1,6 @@
 package com.bodkasoft;
 
+import java.util.Arrays;
 import java.util.List;
 
 /* TODO
@@ -23,16 +24,16 @@ public class Main {
 
             StringProcessor processor = new StringProcessor(text);
 
-            List<String> wordsInText = processor.splitIntoWords();
+            String[] wordsInText = processor.splitIntoWords();
 
-            List<String> wordsWithVowel = processor.findVowel(wordsInText);
+            String[] wordsWithVowel = processor.findVowel(wordsInText);
 
             System.out.println("<---Words with Vowels--->");
-            System.out.println(wordsWithVowel);
+            System.out.println(Arrays.toString(wordsWithVowel));
             System.out.println();
 
             System.out.println("<---Sorted Words--->");
-            System.out.println(processor.sortBySecondLetter(wordsWithVowel));
+            System.out.println(Arrays.toString(processor.sortBySecondLetter(wordsWithVowel)));
 
         }catch (IllegalArgumentException e){
             System.out.println("Error: " + e.getMessage());
